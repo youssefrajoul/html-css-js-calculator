@@ -1,0 +1,59 @@
+header {
+    background-color: cadetblue;
+    grid-area: header;
+    border-radius: 10px;
+}
+
+.menu1 {
+    grid-area: menu1;
+    background-color: cornsilk;
+}
+
+.menu2{
+    grid-area: menu2;
+    background-color: coral;
+}
+
+main {
+    grid-area: main;
+
+}
+
+.langage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.langage :hover {
+    background-color: greenyellow;
+}
+
+.python , .javascript , .java {
+    padding: 5px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: cornsilk;
+    margin: 3%;
+}
+
+.langage h2 {
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr 15fr 40px;
+    grid-template-areas: 
+        "header header"
+        "menu1 menu2"
+        "menu1 main"
+        "footer footer";
+}
