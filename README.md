@@ -1,4 +1,4 @@
-# Sokoban Web App Game
+# Calculator Web App
 
 ## Description
 
